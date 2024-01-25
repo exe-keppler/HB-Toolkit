@@ -1,4 +1,4 @@
-# OSCP Toolkit
+#Toolkit
 
 ## Descripción
 `oscp_toolkit.sh` es un script de Bash diseñado para automatizar y facilitar varias tareas comunes en el pentesting y la preparación para el examen OSCP. Este script proporciona un menú interactivo que permite al usuario elegir entre una variedad de herramientas de pentesting y ejecutar comandos específicos preconfigurados.
