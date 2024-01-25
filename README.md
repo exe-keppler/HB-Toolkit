@@ -1,25 +1,48 @@
 # OSCP Toolkit
 
 ## Descripción
-Este repositorio contiene un script de Bash diseñado para facilitar diversas tareas relacionadas con pruebas de penetración y preparación para el examen OSCP. El script incluye funciones para realizar escaneos con Nmap, WPScan, Nikto, dnsrecon, gobuster y wfuzz, entre otras herramientas comunes en el ámbito del pentesting.
+`oscp_toolkit.sh` es un script de Bash diseñado para automatizar y facilitar varias tareas comunes en el pentesting y la preparación para el examen OSCP. Este script proporciona un menú interactivo que permite al usuario elegir entre una variedad de herramientas de pentesting y ejecutar comandos específicos preconfigurados.
 
-## Características
-- Menú interactivo para seleccionar herramientas de pentesting.
-- Comandos preconfigurados para un uso rápido y eficiente.
-- Opciones para diferentes tipos de escaneos y ataques.
+## Funcionalidades
+
+### Menú Interactivo
+- El script inicia con un menú que presenta opciones como Nmap, WPScan, Nikto, dnsrecon, gobuster, y wfuzz.
+- El usuario puede seleccionar la herramienta deseada ingresando el número correspondiente.
+
+### Opciones de Herramientas
+
+#### Nmap Scans
+- Permite realizar diferentes tipos de escaneos con Nmap:
+  - Escaneo completo con detección de versión y scripts.
+  - Escaneo de vulnerabilidades.
+  - El usuario debe ingresar la dirección IP del objetivo.
+
+#### WPScan
+- Realiza escaneos en sitios WordPress para encontrar vulnerabilidades, plugins, temas y realizar fuerza bruta en usuarios.
+- El usuario debe proporcionar la URL del sitio WordPress.
+
+#### Nikto
+- Ejecuta el escáner de servidor web Nikto para detectar vulnerabilidades y problemas de seguridad.
+- Requiere la dirección IP del servidor web.
+
+#### dnsrecon
+- Realiza reconocimiento de DNS en un dominio específico.
+- El usuario debe ingresar el nombre del dominio a investigar.
+
+#### gobuster
+- Utiliza gobuster para la búsqueda de directorios y archivos ocultos en sitios web.
+- El usuario debe proporcionar la URL y seleccionar entre búsqueda de directorios o archivos.
+
+#### wfuzz
+- Permite realizar fuzzing en aplicaciones web utilizando wfuzz.
+- Se utiliza para detectar XSS, inyecciones SQL, y otros.
+- El usuario debe ingresar la URL de destino.
+
+### Extractor de IPs
+- Extrae direcciones IP de archivos de texto, como archivos de registro o resultados de escaneo.
 
 ## Cómo Contribuir
-Las contribuciones son lo que hacen que la comunidad de código abierto sea un lugar increíble para aprender, inspirar y crear. Cualquier contribución que hagas será **muy apreciada**.
-
-Si tienes una sugerencia que podría mejorar esto, por favor bifurca el repositorio y crea una pull request. También puedes simplemente abrir un issue con la etiqueta "mejora". ¡No olvides dar una estrella al proyecto! Gracias de antemano por tu contribución.
-
-### Pasos para Contribuir
-1. Bifurca el Proyecto
-2. Crea tu Rama de Características (`git checkout -b feature/AmazingFeature`)
-3. Haz tus Cambios y Añádelos (`git add .`)
-4. Haz un Commit de tus Cambios (`git commit -m 'Add some AmazingFeature'`)
-5. Empuja a la Rama (`git push origin feature/AmazingFeature`)
-6. Abre una Pull Request
+Las contribuciones son bienvenidas y valoradas. Si deseas añadir nuevas funciones, mejorar la interfaz del usuario, o cualquier otra mejora, por favor sigue los pasos descritos en la sección de contribución.
 
 ## Uso
-Para usar este script, clónalo en tu máquina local y ejecútalo en una terminal. Asegúrate de tener instaladas todas las herramientas necesarias y de contar con los permisos adecuados para realizar pruebas de penetración.
+Para utilizar este script, clónalo en tu sistema, otórgale permisos de ejecución con `chmod +x oscp_toolkit.sh`, y ejecútalo en una terminal. Asegúrate de tener instaladas todas las herramientas requeridas
